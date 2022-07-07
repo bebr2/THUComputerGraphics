@@ -1,0 +1,6 @@
+/mnt/d/HW_code/Pictures_Science/PA4/build/CMakeFiles/rebuild_cache.dir
+/mnt/d/HW_code/Pictures_Science/PA4/build/CMakeFiles/edit_cache.dir
+/mnt/d/HW_code/Pictures_Science/PA4/build/CMakeFiles/PA4.dir
+/mnt/d/HW_code/Pictures_Science/PA4/build/deps/vecmath/CMakeFiles/rebuild_cache.dir
+/mnt/d/HW_code/Pictures_Science/PA4/build/deps/vecmath/CMakeFiles/edit_cache.dir
+/mnt/d/HW_code/Pictures_Science/PA4/build/deps/vecmath/CMakeFiles/vecmath.dir
