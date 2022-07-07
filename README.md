@@ -1,0 +1,2 @@
+# THUComputerGraphics
+2022春季学期清华大学计算机图形学大作业
