@@ -1,0 +1,1 @@
+/usr/bin/c++  -O3 -DNDEBUG  -rdynamic CMakeFiles/PA4.dir/src/image.cpp.o CMakeFiles/PA4.dir/src/main.cpp.o CMakeFiles/PA4.dir/src/mesh.cpp.o CMakeFiles/PA4.dir/src/scene_parser.cpp.o CMakeFiles/PA4.dir/src/texture.cpp.o  -o ../bin/PA4  deps/vecmath/libvecmath.a 

@@ -1,0 +1,173 @@
+PerspectiveCamera {
+    center 50 52 295.6
+    direction 0 -0.042612 -1
+    up 0 1 0
+    angle 30
+    width 800
+    height 600
+}
+
+Lights {
+    numLights 1
+    RoundDisk_Light {
+        position 1 40.8 80
+        emission 12 12 12
+        radius 20
+        direction 1 0 0
+        color 0.9 0.9 0.9 
+    }
+}
+
+Background {
+    color 0 0 0 
+}
+
+Materials {
+    numMaterials 10
+    Material { 
+        color 0.75 0.25 0.25
+        type 1 0 0
+    }
+    Material { 
+        color 0.25 0.25 0.75 
+        type 1 0 0
+        texture texture/tian.jpg
+    }
+    Material { 
+        color 0.75 0.75 0.75 
+        type 1 0 0
+    }
+    Material { 
+        color 0 0 0
+        type 1 0 0
+    }
+    Material {
+        color 1 1 0
+        type 0 0 1
+        refr 1.5
+    }
+    Material {
+        color 0.58 0.88 0.82
+        type 0.85 0.15 0
+        texture texture/viking.png
+    }
+
+    Material { 
+        color 0 0.8 0
+        type 0 1 0
+    }
+     Material {
+        color 1 1 1
+        type 1 0 0
+        texture texture/tsinghua.jpg
+    }
+
+     Material {
+        color 1 1 1
+        type 1 0 0
+        texture texture/peking.jpg
+    }
+    Material { 
+        color 1 1 1
+        type 1 0 0
+        texture texture/wall.jpg
+    }
+}
+
+Group {
+    numObjects 12
+    MaterialIndex 0
+    Plane {
+        normal 1 0 0
+        offset 1
+    }
+    MaterialIndex 0
+    Plane {
+        normal -1 0 0
+        offset -99 
+    }
+    MaterialIndex 9
+    Plane {
+        normal 0 0 1
+        offset 0
+    }
+    MaterialIndex 3
+    Plane {
+        normal 0 0 -1
+        offset -300
+    }
+    MaterialIndex 2
+    Plane {
+        normal 0 1 0
+        offset 0
+    }
+    MaterialIndex 1
+    Plane {
+        normal 0 -1 0
+        offset -81.6
+    }
+    
+    MaterialIndex 4
+    Transform {
+        Translate 40 -5 80
+        Scale 120 120 120
+        XRotate 90
+        TriangleMesh {
+            obj_file mesh/mybunny2.obj
+        }
+    }
+
+    MaterialIndex 5
+    Transform {
+        Translate 50 62 80
+        Scale 3.3 3.3 3.3
+       ZRotate 30
+       YRotate 20
+        TriangleMesh {
+            obj_file mesh/Viking2.obj
+        }
+    }
+
+    MaterialIndex 5
+    Transform {
+        Translate 50 60 70
+        Scale 3.3 3.3 3.3
+       ZRotate -30
+       YRotate 160
+        TriangleMesh {
+            obj_file mesh/Viking2.obj
+        }
+    }
+
+    MaterialIndex 6
+    Sphere {
+	    center 50 92 81.6 
+            radius 20
+        }
+
+    MaterialIndex 8
+    Transform {
+    Translate 69 7 100
+    ZRotate 180
+    XRotate 20
+        Sphere {
+        center 0 0 0
+        radius 7
+        }
+    }
+    
+
+     MaterialIndex 7
+    Transform {
+        Translate 77 8 110
+        ZRotate 150
+        XRotate 20
+        Sphere {
+            center 0 0 0
+            radius 8
+        }
+    }
+
+
+
+}

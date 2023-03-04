@@ -1,0 +1,83 @@
+PerspectiveCamera {
+    center 50 52 295.6
+    direction 0 -0.042612 -1
+    up 0 1 0
+    angle 30
+    width 600
+    height 600
+}
+
+Lights {
+    numLights 1
+    RoundDisk_Light {
+        position 50 81.6 81.6
+        emission 10 10 10
+        radius 20
+        direction 0 -1 0
+        color 0.9 0.9 0.9 
+    }
+}
+
+
+Background {
+    color 0 0 0 
+}
+
+Materials {
+    numMaterials 5
+    Material { 
+        color 0.75 0.25 0.25
+        type 1 0 0
+    }
+    Material { 
+        color 0.25 0.25 0.75 
+        type 1 0 0
+    }
+    Material { 
+        color 0.75 0.75 0.75 
+        type 1 0 0
+    }
+    Material { 
+        color 0 0 0
+        type 1 0 0
+    }
+    Material {
+        color 1 1 1
+        type 0 1 0
+    }
+}
+
+Group {
+    numObjects 7
+    MaterialIndex 0
+    Plane {
+        normal 1 0 0
+        offset 1
+    }
+    MaterialIndex 1
+    Plane {
+        normal -1 0 0
+        offset -99 
+    }
+    MaterialIndex 2
+    Plane {
+        normal 0 0 1
+        offset 0
+    }
+    MaterialIndex 3
+    Plane {
+        normal 0 0 -1
+        offset -300
+    }
+    MaterialIndex 2
+    Plane {
+        normal 0 1 0
+        offset 0
+    }
+    MaterialIndex 2
+    Plane {
+        normal 0 -1 0
+        offset -81.6
+    }
+
+}

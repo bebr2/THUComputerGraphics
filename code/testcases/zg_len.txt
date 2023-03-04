@@ -1,0 +1,200 @@
+LensCamera {
+    center 50 52 295.6
+    direction 0 -0.042612 -1
+    up 0 1 0
+    angle 30
+    width 600
+    height 600
+    distance 205
+    radius 10
+}
+
+Lights {
+    numLights 1
+    RoundDisk_Light {
+        position 50 81.6 81.6
+        emission 10 10 10
+        radius 20
+        direction 0 -1 0
+        color 0.9 0.9 0.9 
+    }
+}
+
+Background {
+    color 0 0 0 
+}
+
+Materials {
+    numMaterials 10
+    Material { 
+        color 0.75 0.25 0.25
+        type 0 1 0
+    }
+    Material { 
+        color 0.25 0.25 0.75 
+        type 1 0 0
+    }
+    Material { 
+        color 0.75 0.75 0.75 
+        type 1 0 0
+    }
+    Material { 
+        color 0 0 0
+        type 1 0 0
+    }
+    Material {
+        color 1 1 1
+        type 0 1 0
+    }
+    Material {
+        color 1 1 1
+        type 0 0 1
+        refr 1.5
+    }
+    Material {
+        color 0 0 0
+        emission 20 20 20
+        type 1 0 0
+    }
+    Material {
+        color 0.58 0.88 0.82
+        type 1 0 0
+        bump texture/bricks.jpg
+    }
+    Material {
+        color 0.58 0.88 0.82
+        type 0.9 0.1 0
+        texture texture/viking.png
+    }
+    Material {
+        color 1 1 1
+        type 0 0 1
+        refr 1.6
+    }
+}
+
+Group {
+    numObjects 10
+    MaterialIndex 0
+    Plane {
+        normal 1 0 0
+        offset 1
+    }
+    MaterialIndex 1
+    Plane {
+        normal -1 0 0
+        offset -99 
+    }
+    MaterialIndex 2
+    Plane {
+        normal 0 0 1
+        offset 0
+    }
+    MaterialIndex 3
+    Plane {
+        normal 0 0 -1
+        offset -300
+    }
+    MaterialIndex 2
+    Plane {
+        normal 0 1 0
+        offset 0
+    }
+    MaterialIndex 2
+    Plane {
+        normal 0 -1 0
+        offset -81.6
+    }
+    
+    MaterialIndex 9
+    Transform {
+        Translate  20 4 57
+        Scale 9 9 9
+        RevSurface {
+            profile BsplineCurve {
+                controls
+                    [ 0.000000 -0.459543 0.0 ]
+                    [ 0.000000 -0.459544 0.0 ]
+                    [ 0.000000 -0.459545 0.0 ]
+                    [ -0.351882 -0.426747 0.0 ]
+                    [ -0.848656 -0.278898 0.0 ]
+                    [ -1.112097 0.084005 0.0 ]
+                    [ -1.164785 1.105511 0.0 ]
+                    [ -0.991667 2.328629 0.0 ]
+                    [ -1.029301 2.503360 0.0 ]
+                    [ -1.088800 2.345600 0.0 ]
+                    [ -1.278000 1.162800 0.0 ]
+                    [ -1.214800 0.055200 0.0 ]
+                    [ -0.915600 -0.381200 0.0 ]
+                    [ -0.380400 -0.622000 0.0 ]
+                    [ -0.144000 -0.968400 0.0 ]
+
+            }
+        }
+    }
+
+    MaterialIndex 9
+    Transform {
+        Translate  50 4 87
+        Scale 9 9 9
+        RevSurface {
+            profile BsplineCurve {
+                controls
+                    [ 0.000000 -0.459543 0.0 ]
+                    [ 0.000000 -0.459544 0.0 ]
+                    [ 0.000000 -0.459545 0.0 ]
+                    [ -0.351882 -0.426747 0.0 ]
+                    [ -0.848656 -0.278898 0.0 ]
+                    [ -1.112097 0.084005 0.0 ]
+                    [ -1.164785 1.105511 0.0 ]
+                    [ -0.991667 2.328629 0.0 ]
+                    [ -1.029301 2.503360 0.0 ]
+                    [ -1.088800 2.345600 0.0 ]
+                    [ -1.278000 1.162800 0.0 ]
+                    [ -1.214800 0.055200 0.0 ]
+                    [ -0.915600 -0.381200 0.0 ]
+                    [ -0.380400 -0.622000 0.0 ]
+                    [ -0.144000 -0.968400 0.0 ]
+
+            }
+        }
+    }
+
+    MaterialIndex 9
+    Transform {
+        Translate  80 4 117
+        Scale 9 9 9
+        RevSurface {
+            profile BsplineCurve {
+                controls
+                    [ 0.000000 -0.459543 0.0 ]
+                    [ 0.000000 -0.459544 0.0 ]
+                    [ 0.000000 -0.459545 0.0 ]
+                    [ -0.351882 -0.426747 0.0 ]
+                    [ -0.848656 -0.278898 0.0 ]
+                    [ -1.112097 0.084005 0.0 ]
+                    [ -1.164785 1.105511 0.0 ]
+                    [ -0.991667 2.328629 0.0 ]
+                    [ -1.029301 2.503360 0.0 ]
+                    [ -1.088800 2.345600 0.0 ]
+                    [ -1.278000 1.162800 0.0 ]
+                    [ -1.214800 0.055200 0.0 ]
+                    [ -0.915600 -0.381200 0.0 ]
+                    [ -0.380400 -0.622000 0.0 ]
+                    [ -0.144000 -0.968400 0.0 ]
+
+            }
+        }
+    }
+
+     MaterialIndex 8
+    Transform {
+        Translate 60 45 95
+        Scale 3.2 3.2 3.2
+       YRotate -30
+        TriangleMesh {
+            obj_file mesh/Viking2.obj
+        }
+    }
+
+}
